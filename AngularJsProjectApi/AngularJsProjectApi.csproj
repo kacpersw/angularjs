@@ -196,6 +196,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="DTO\DayGroupScheduleDTO.cs" />
     <Compile Include="DTO\DayScheduleDTO.cs" />
+    <Compile Include="DTO\EditScheduleDTO.cs" />
     <Compile Include="DTO\GroupDTO.cs" />
     <Compile Include="DTO\GroupScheduleDTO.cs" />
     <Compile Include="DTO\HourGroupScheduleDTO.cs" />
