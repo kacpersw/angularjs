@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7c1dcbc7af1c43bb9d115e3df77d74b6" Name="Diagram1" ZoomLevel="63">
+        <EntityTypeShape EntityType="schoolactivitesModel.Day" Width="1.5" PointX="6.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="schoolactivitesModel.GROUP" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="schoolactivitesModel.Hour10" Width="1.5" PointX="3" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="schoolactivitesModel.Hour11" Width="1.5" PointX="6" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="schoolactivitesModel.Hour12" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="schoolactivitesModel.Hour13" Width="1.5" PointX="3" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="schoolactivitesModel.Hour14" Width="1.5" PointX="6" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="schoolactivitesModel.Hour15" Width="1.5" PointX="6" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="schoolactivitesModel.Hour8" Width="1.5" PointX="9" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="schoolactivitesModel.Hour9" Width="1.5" PointX="9" PointY="9.625" IsExpanded="true" />
+        <AssociationConnector Association="schoolactivitesModel.sdsd7s" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsds" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsds1" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsds2" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsds3" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsds4" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsds5" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsds6" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsd" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsd1" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsd2" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsd3" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsd4" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsd5" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsd6" ManuallyRouted="false" />
+        <AssociationConnector Association="schoolactivitesModel.sdsd7" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

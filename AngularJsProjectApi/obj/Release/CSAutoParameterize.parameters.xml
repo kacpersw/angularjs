@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ScheduleContext-Web.config Connection String" description="ScheduleContext Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.ScheduleModel.csdl|res://*/Models.ScheduleModel.ssdl|res://*/Models.ScheduleModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=tcp:schoolactivites.database.windows.net,1433;initial catalog=schoolactivites;user id=student;password=Bigos123;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Kacper\\Desktop\\AngularJsProjectApi\\AngularJsProjectApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ScheduleContext']/@connectionString" />
+  </parameter>
+</parameters>

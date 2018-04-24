@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="schoolactivitesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Day">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Hour15" Relationship="Self.sdsd7s" FromRole="Day" ToRole="Hour15" />
+    <NavigationProperty Name="Hour8" Relationship="Self.sdsds" FromRole="Day" ToRole="Hour8" />
+    <NavigationProperty Name="Hour9" Relationship="Self.sdsds1" FromRole="Day" ToRole="Hour9" />
+    <NavigationProperty Name="Hour10" Relationship="Self.sdsds2" FromRole="Day" ToRole="Hour10" />
+    <NavigationProperty Name="Hour11" Relationship="Self.sdsds3" FromRole="Day" ToRole="Hour11" />
+    <NavigationProperty Name="Hour12" Relationship="Self.sdsds4" FromRole="Day" ToRole="Hour12" />
+    <NavigationProperty Name="Hour13" Relationship="Self.sdsds5" FromRole="Day" ToRole="Hour13" />
+    <NavigationProperty Name="Hour14" Relationship="Self.sdsds6" FromRole="Day" ToRole="Hour14" />
+  </EntityType>
+  <EntityType Name="GROUP">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Hour8" Relationship="Self.sdsd" FromRole="GROUP" ToRole="Hour8" />
+    <NavigationProperty Name="Hour9" Relationship="Self.sdsd1" FromRole="GROUP" ToRole="Hour9" />
+    <NavigationProperty Name="Hour10" Relationship="Self.sdsd2" FromRole="GROUP" ToRole="Hour10" />
+    <NavigationProperty Name="Hour11" Relationship="Self.sdsd3" FromRole="GROUP" ToRole="Hour11" />
+    <NavigationProperty Name="Hour12" Relationship="Self.sdsd4" FromRole="GROUP" ToRole="Hour12" />
+    <NavigationProperty Name="Hour13" Relationship="Self.sdsd5" FromRole="GROUP" ToRole="Hour13" />
+    <NavigationProperty Name="Hour14" Relationship="Self.sdsd6" FromRole="GROUP" ToRole="Hour14" />
+    <NavigationProperty Name="Hour15" Relationship="Self.sdsd7" FromRole="GROUP" ToRole="Hour15" />
+  </EntityType>
+  <EntityType Name="Hour10">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GroupId" Type="Int64" Nullable="false" />
+    <Property Name="DayId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Day" Relationship="Self.sdsds2" FromRole="Hour10" ToRole="Day" />
+    <NavigationProperty Name="GROUP" Relationship="Self.sdsd2" FromRole="Hour10" ToRole="GROUP" />
+  </EntityType>
+  <EntityType Name="Hour11">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GroupId" Type="Int64" Nullable="false" />
+    <Property Name="DayId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Day" Relationship="Self.sdsds3" FromRole="Hour11" ToRole="Day" />
+    <NavigationProperty Name="GROUP" Relationship="Self.sdsd3" FromRole="Hour11" ToRole="GROUP" />
+  </EntityType>
+  <EntityType Name="Hour12">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GroupId" Type="Int64" Nullable="false" />
+    <Property Name="DayId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Day" Relationship="Self.sdsds4" FromRole="Hour12" ToRole="Day" />
+    <NavigationProperty Name="GROUP" Relationship="Self.sdsd4" FromRole="Hour12" ToRole="GROUP" />
+  </EntityType>
+  <EntityType Name="Hour13">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GroupId" Type="Int64" Nullable="false" />
+    <Property Name="DayId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Day" Relationship="Self.sdsds5" FromRole="Hour13" ToRole="Day" />
+    <NavigationProperty Name="GROUP" Relationship="Self.sdsd5" FromRole="Hour13" ToRole="GROUP" />
+  </EntityType>
+  <EntityType Name="Hour14">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GroupId" Type="Int64" Nullable="false" />
+    <Property Name="DayId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Day" Relationship="Self.sdsds6" FromRole="Hour14" ToRole="Day" />
+    <NavigationProperty Name="GROUP" Relationship="Self.sdsd6" FromRole="Hour14" ToRole="GROUP" />
+  </EntityType>
+  <EntityType Name="Hour15">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GroupId" Type="Int64" Nullable="false" />
+    <Property Name="DayId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Day" Relationship="Self.sdsd7s" FromRole="Hour15" ToRole="Day" />
+    <NavigationProperty Name="GROUP" Relationship="Self.sdsd7" FromRole="Hour15" ToRole="GROUP" />
+  </EntityType>
+  <EntityType Name="Hour8">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GroupId" Type="Int64" Nullable="false" />
+    <Property Name="DayId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Day" Relationship="Self.sdsds" FromRole="Hour8" ToRole="Day" />
+    <NavigationProperty Name="GROUP" Relationship="Self.sdsd" FromRole="Hour8" ToRole="GROUP" />
+  </EntityType>
+  <EntityType Name="Hour9">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GroupId" Type="Int64" Nullable="false" />
+    <Property Name="DayId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Day" Relationship="Self.sdsds1" FromRole="Hour9" ToRole="Day" />
+    <NavigationProperty Name="GROUP" Relationship="Self.sdsd1" FromRole="Hour9" ToRole="GROUP" />
+  </EntityType>
+  <Association Name="sdsd7s">
+    <End Role="Day" Type="Self.Day" Multiplicity="1" />
+    <End Role="Hour15" Type="Self.Hour15" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Day">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour15">
+        <PropertyRef Name="DayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsds">
+    <End Role="Day" Type="Self.Day" Multiplicity="1" />
+    <End Role="Hour8" Type="Self.Hour8" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Day">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour8">
+        <PropertyRef Name="DayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsds1">
+    <End Role="Day" Type="Self.Day" Multiplicity="1" />
+    <End Role="Hour9" Type="Self.Hour9" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Day">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour9">
+        <PropertyRef Name="DayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsds2">
+    <End Role="Day" Type="Self.Day" Multiplicity="1" />
+    <End Role="Hour10" Type="Self.Hour10" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Day">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour10">
+        <PropertyRef Name="DayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsds3">
+    <End Role="Day" Type="Self.Day" Multiplicity="1" />
+    <End Role="Hour11" Type="Self.Hour11" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Day">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour11">
+        <PropertyRef Name="DayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsds4">
+    <End Role="Day" Type="Self.Day" Multiplicity="1" />
+    <End Role="Hour12" Type="Self.Hour12" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Day">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour12">
+        <PropertyRef Name="DayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsds5">
+    <End Role="Day" Type="Self.Day" Multiplicity="1" />
+    <End Role="Hour13" Type="Self.Hour13" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Day">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour13">
+        <PropertyRef Name="DayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsds6">
+    <End Role="Day" Type="Self.Day" Multiplicity="1" />
+    <End Role="Hour14" Type="Self.Hour14" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Day">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour14">
+        <PropertyRef Name="DayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsd">
+    <End Role="GROUP" Type="Self.GROUP" Multiplicity="1" />
+    <End Role="Hour8" Type="Self.Hour8" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GROUP">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour8">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsd1">
+    <End Role="GROUP" Type="Self.GROUP" Multiplicity="1" />
+    <End Role="Hour9" Type="Self.Hour9" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GROUP">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour9">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsd2">
+    <End Role="GROUP" Type="Self.GROUP" Multiplicity="1" />
+    <End Role="Hour10" Type="Self.Hour10" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GROUP">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour10">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsd3">
+    <End Role="GROUP" Type="Self.GROUP" Multiplicity="1" />
+    <End Role="Hour11" Type="Self.Hour11" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GROUP">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour11">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsd4">
+    <End Role="GROUP" Type="Self.GROUP" Multiplicity="1" />
+    <End Role="Hour12" Type="Self.Hour12" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GROUP">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour12">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsd5">
+    <End Role="GROUP" Type="Self.GROUP" Multiplicity="1" />
+    <End Role="Hour13" Type="Self.Hour13" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GROUP">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour13">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsd6">
+    <End Role="GROUP" Type="Self.GROUP" Multiplicity="1" />
+    <End Role="Hour14" Type="Self.Hour14" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GROUP">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour14">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="sdsd7">
+    <End Role="GROUP" Type="Self.GROUP" Multiplicity="1" />
+    <End Role="Hour15" Type="Self.Hour15" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GROUP">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hour15">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ScheduleContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Day" EntityType="Self.Day" />
+    <EntitySet Name="GROUP" EntityType="Self.GROUP" />
+    <EntitySet Name="Hour10" EntityType="Self.Hour10" />
+    <EntitySet Name="Hour11" EntityType="Self.Hour11" />
+    <EntitySet Name="Hour12" EntityType="Self.Hour12" />
+    <EntitySet Name="Hour13" EntityType="Self.Hour13" />
+    <EntitySet Name="Hour14" EntityType="Self.Hour14" />
+    <EntitySet Name="Hour15" EntityType="Self.Hour15" />
+    <EntitySet Name="Hour8" EntityType="Self.Hour8" />
+    <EntitySet Name="Hour9" EntityType="Self.Hour9" />
+    <AssociationSet Name="sdsd7s" Association="Self.sdsd7s">
+      <End Role="Day" EntitySet="Day" />
+      <End Role="Hour15" EntitySet="Hour15" />
+    </AssociationSet>
+    <AssociationSet Name="sdsds" Association="Self.sdsds">
+      <End Role="Day" EntitySet="Day" />
+      <End Role="Hour8" EntitySet="Hour8" />
+    </AssociationSet>
+    <AssociationSet Name="sdsds1" Association="Self.sdsds1">
+      <End Role="Day" EntitySet="Day" />
+      <End Role="Hour9" EntitySet="Hour9" />
+    </AssociationSet>
+    <AssociationSet Name="sdsds2" Association="Self.sdsds2">
+      <End Role="Day" EntitySet="Day" />
+      <End Role="Hour10" EntitySet="Hour10" />
+    </AssociationSet>
+    <AssociationSet Name="sdsds3" Association="Self.sdsds3">
+      <End Role="Day" EntitySet="Day" />
+      <End Role="Hour11" EntitySet="Hour11" />
+    </AssociationSet>
+    <AssociationSet Name="sdsds4" Association="Self.sdsds4">
+      <End Role="Day" EntitySet="Day" />
+      <End Role="Hour12" EntitySet="Hour12" />
+    </AssociationSet>
+    <AssociationSet Name="sdsds5" Association="Self.sdsds5">
+      <End Role="Day" EntitySet="Day" />
+      <End Role="Hour13" EntitySet="Hour13" />
+    </AssociationSet>
+    <AssociationSet Name="sdsds6" Association="Self.sdsds6">
+      <End Role="Day" EntitySet="Day" />
+      <End Role="Hour14" EntitySet="Hour14" />
+    </AssociationSet>
+    <AssociationSet Name="sdsd" Association="Self.sdsd">
+      <End Role="GROUP" EntitySet="GROUP" />
+      <End Role="Hour8" EntitySet="Hour8" />
+    </AssociationSet>
+    <AssociationSet Name="sdsd1" Association="Self.sdsd1">
+      <End Role="GROUP" EntitySet="GROUP" />
+      <End Role="Hour9" EntitySet="Hour9" />
+    </AssociationSet>
+    <AssociationSet Name="sdsd2" Association="Self.sdsd2">
+      <End Role="GROUP" EntitySet="GROUP" />
+      <End Role="Hour10" EntitySet="Hour10" />
+    </AssociationSet>
+    <AssociationSet Name="sdsd3" Association="Self.sdsd3">
+      <End Role="GROUP" EntitySet="GROUP" />
+      <End Role="Hour11" EntitySet="Hour11" />
+    </AssociationSet>
+    <AssociationSet Name="sdsd4" Association="Self.sdsd4">
+      <End Role="GROUP" EntitySet="GROUP" />
+      <End Role="Hour12" EntitySet="Hour12" />
+    </AssociationSet>
+    <AssociationSet Name="sdsd5" Association="Self.sdsd5">
+      <End Role="GROUP" EntitySet="GROUP" />
+      <End Role="Hour13" EntitySet="Hour13" />
+    </AssociationSet>
+    <AssociationSet Name="sdsd6" Association="Self.sdsd6">
+      <End Role="GROUP" EntitySet="GROUP" />
+      <End Role="Hour14" EntitySet="Hour14" />
+    </AssociationSet>
+    <AssociationSet Name="sdsd7" Association="Self.sdsd7">
+      <End Role="GROUP" EntitySet="GROUP" />
+      <End Role="Hour15" EntitySet="Hour15" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
